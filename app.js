@@ -13,7 +13,9 @@ let calculate = function (total, selected) {
 submit.addEventListener('click', (e) => {
   e.preventDefault();
   let regExp = /(\d+\.*\d*)/g;
-  if(Number(billTotal.value) == '' || Number(billTotal.value) === 0 || regExp.test(billTotal.value) == false) {
+  if (selectMenu.value === '0' || billTotal.value == '' || numPeople.value == ""){
+    alert('Please fill out all fields');
+  } else if(Number(billTotal.value) === 0 || regExp.test(billTotal.value) == false) {
     alert('Please enter a valid number');
   } else {
     billTotal.value = billTotal.value.replace(/,/g, '');
@@ -23,5 +25,3 @@ submit.addEventListener('click', (e) => {
   }
 
 });
-//if they don't enter an actual number
-//alert if they don't fill out tip percentage or number of people
