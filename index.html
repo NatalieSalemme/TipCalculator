@@ -17,22 +17,25 @@
       <h3>Tip Calculator</h3>
       <p>What was your bill total?</p>
       <div class="row">
-      &#36; <input type="text" name="bill-total" placeholder="Bill Total">
+      &#36; <input type="text" id="bill-total" name="bill-total" placeholder="Bill Total">
     </div>
       <p>Rate your service</p>
-      <select name="service">
-         <option disabled selected value="0">--Choose Tip Percentage --</option>
-        <option value="terrible">Terrible 5%</option>
-        <option value="standard">Standard 15%</option>
-        <option value="great">Great 20%</option>
-        <option value="amazing">Amazing 25%</option>
+      <select name="service" id="select-menu">
+        <option disabled selected value="0">--Choose Tip Percentage --</option>
+        <option value="0.05">Terrible 5%</option>
+        <option value="0.15">Standard 15%</option>
+        <option value="0.20">Great 20%</option>
+        <option value="0.25">Amazing 25%</option>
       </select>
       <p>Number of people splitting the bill</p>
-      <input type="number" class="number-of-people" name="quantity" min="1" max="12" placeholder="Number of People">
+      <input id="num-people" type="number" class="number-of-people" name="quantity" min="1" max="12" placeholder="Number of People">
       <input id="submit" type="submit" value="Calculate">
+      <h2 id="pay-text"></h2>
+      <div id="result">
 
+      </div>
     </form>
-<!-- </div> -->
+
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>

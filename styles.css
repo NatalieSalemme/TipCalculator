@@ -4,7 +4,7 @@ form {
   background-color: #f2e1e8;
   width: 75%;
   max-width: 500px;
-
+  padding-bottom: 5em;
   margin: auto;
   margin-top: 10em;
   border-radius: 20px;
@@ -30,7 +30,7 @@ form {
   font-size: 25px;
   background-color: #a0164f;
   color: #ffe5f0;
-  margin-bottom: 5em;
+  margin-bottom: 1em;
 }
 #submit:hover {
   background-color: #f49cc1;
@@ -44,4 +44,7 @@ h3{
   border-radius: 10px;
   padding: .5em 0 .5em 0;
   align-self: center;
+}
+#result {
+  padding-top: -2em;
 }
