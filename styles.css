@@ -1,0 +1,47 @@
+form {
+  width: 40px;
+  margin: auto;
+  background-color: #f2e1e8;
+  width: 75%;
+  max-width: 500px;
+
+  margin: auto;
+  margin-top: 10em;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+
+}
+.number-of-people {
+  width: 170px;
+  margin: 0 0 2em 0;
+  justify-content: center;
+  text-align: center;
+
+}
+#submit {
+  margin-bottom: 2em;
+  border-radius: 10px;
+  height: 60px;
+  width: 130px;
+  font-size: 25px;
+  background-color: #a0164f;
+  color: #ffe5f0;
+  margin-bottom: 5em;
+}
+#submit:hover {
+  background-color: #f49cc1;
+}
+h3{
+  background-color: pink;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+  margin: auto;
+  border-radius: 10px;
+  padding: .5em 0 .5em 0;
+  align-self: center;
+}

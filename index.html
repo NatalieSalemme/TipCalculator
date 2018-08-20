@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="author" content="Natalie Salemme">
+  <meta name="description" content="Tip Calculator">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="normalize.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<!-- <div class="container"> -->
+    <form>
+      <h3>Tip Calculator</h3>
+      <p>What was your bill total?</p>
+      <div class="row">
+      &#36; <input type="text" name="bill-total" placeholder="Bill Total">
+    </div>
+      <p>Rate your service</p>
+      <select name="service">
+         <option disabled selected value="0">--Choose Tip Percentage --</option>
+        <option value="terrible">Terrible 5%</option>
+        <option value="standard">Standard 15%</option>
+        <option value="great">Great 20%</option>
+        <option value="amazing">Amazing 25%</option>
+      </select>
+      <p>Number of people splitting the bill</p>
+      <input type="number" class="number-of-people" name="quantity" min="1" max="12" placeholder="Number of People">
+      <input id="submit" type="submit" value="Calculate">
+
+    </form>
+<!-- </div> -->
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
